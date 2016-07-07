@@ -25,7 +25,7 @@ public class PrimeFactorTest {
         assertEquals(list(2), PrimeFactor.generate(2));
         assertEquals(list(3), PrimeFactor.generate(3));
         assertEquals(list(5), PrimeFactor.generate(5));
-        assertNotEquals(list(514), PrimeFactor.generate(514));
+        assertEquals(list(514), PrimeFactor.generate(514));
     }
 
     @Test
