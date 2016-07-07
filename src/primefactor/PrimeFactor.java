@@ -1,21 +1,28 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package primefactor;
 
-/**
- *
- * @author stefanoleli
- */
+import java.util.ArrayList;
+import java.util.List;
+
 public class PrimeFactor {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    static List<Integer> generate(int n) {
+        List<Integer> list = new ArrayList<>();
+
+        while (n % 2 == 0) {
+            list.add(2);
+            n = n / 2;
+        } 
+        
+        while (n % 3 == 0) {
+            list.add(3);
+            n = n / 3;
+        } 
+        
+         if (n > 1) {
+            list.add(n);
+        }
+
+        return list;
     }
-    
+
 }
