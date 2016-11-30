@@ -8,7 +8,7 @@ public class PrimeFactor {
     static List<Integer> generate(int n) {
         List<Integer> list = new ArrayList<>();
 
-        while (n % 3 == 0) {
+        while (n %  == 0) {
             list.add(2);
             n = n / 2;
         } 
